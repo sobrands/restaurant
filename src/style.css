@@ -9,20 +9,24 @@
   flex-direction: column;
 }
 
-.nav-bar {
+/* Nav Bar */
+#nav-bar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 30px;
-  height: 5vh;
+  padding: 10px 0;
+  gap: 5px;
+  height: 7vh;
 }
 
-.nav-bar .logo {
+/* Logo */
+#nav-bar .logo {
   font-weight: bold;
   font-size: 2em;
 }
 
-.nav-bar ul {
+/* List */
+#nav-bar ul {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
@@ -30,7 +34,22 @@
   font-size: 1.3em;
 }
 
-.main-content::before {
+#nav-bar ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#nav-bar ul li:active {
+  text-decoration: none;
+}
+
+/* Main Body */
+#main-content {
+  flex: 1;
+  position: relative;
+}
+
+#main-content::before {
   content: '';
   background-image: url('../assets/pasta.jpg');
   background-repeat: no-repeat;
@@ -43,7 +62,28 @@
   opacity: 0.7;
 }
 
-.main-content {
-  flex: 1;
+/* Information section */
+#main-content .information {
   position: relative;
+  background: rgba(228, 223, 223, 0.8);
+  margin: 1.5em;
+  padding: 1.2em;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content #intro {
+  justify-content: center;
+  gap: 10px;
+}
+
+#intro h1 {
+  font-size: 90px;
+}
+
+#intro p {
+  font-size: 18px;
 }
