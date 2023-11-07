@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Verdana, sans-serif;
 }
 
 #content {
@@ -31,7 +32,7 @@
   list-style-type: none;
   justify-content: space-evenly;
   gap: 50px;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #nav-bar ul li:hover {
@@ -81,7 +82,7 @@
 }
 
 #intro h1 {
-  font-size: 90px;
+  font-size: 70px;
 }
 
 #intro p {
