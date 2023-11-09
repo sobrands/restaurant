@@ -1,6 +1,6 @@
 const tabArray = ['About', 'Menu', 'Contact'];
 
-export default function initialPage() {
+function initialPage() {
   const content = document.getElementById('content');
 
   // Create Header and Navigation Bar content
@@ -19,6 +19,7 @@ export default function initialPage() {
     const listElement = document.createElement('li');
     listElement.classList.add('selection');
     listElement.textContent = tabArray[i];
+    listElement.setAttribute('id', tabArray[i].toLowerCase());
     tabList.appendChild(listElement);
   }
 
@@ -52,3 +53,20 @@ export default function initialPage() {
   content.appendChild(navBar);
   content.appendChild(mainContent);
 }
+
+function initialPageContent () {
+  const information = document.querySelector('.information');
+
+  const greeting = document.createElement('h1');
+  greeting.classList.add('greeting');
+  greeting.textContent = 'Welcome to paradise';
+
+  const description = document.createElement('p');
+  description.classList.add('description');
+  description.textContent = 'Food cooked with passion and fervour';
+
+  information.appendChild(greeting);
+  information.appendChild(description);
+}
+
+export { initialPage, initialPageContent };

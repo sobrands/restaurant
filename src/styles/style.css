@@ -26,6 +26,10 @@
   font-size: 2em;
 }
 
+#nav-bar .logo:hover {
+  cursor: pointer;
+}
+
 /* List */
 #nav-bar ul {
   display: flex;
