@@ -1,4 +1,8 @@
 import './styles/style.css';
+import './styles/initialPage.css';
+import './styles/aboutPage.css';
+import './styles/menuPage.css';
+import './styles/contactPage.css';
 import { clear, clearContent } from './utils/utils';
 import { initialPage, initialPageContent } from './pages/initialPage';
 import aboutPage from './pages/aboutPage';

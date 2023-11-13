@@ -1,0 +1,8 @@
+#contact {
+ gap: 10px;
+ align-items: center; 
+}
+
+#contact .title {
+  text-decoration: underline;
+}

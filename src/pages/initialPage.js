@@ -56,6 +56,7 @@ function initialPage() {
 
 function initialPageContent () {
   const information = document.querySelector('.information');
+  information.setAttribute('id', 'intro');
 
   const greeting = document.createElement('h1');
   greeting.classList.add('greeting');

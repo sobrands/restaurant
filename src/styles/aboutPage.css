@@ -1,0 +1,18 @@
+#main-content #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+#about .title {
+  text-decoration: underline;
+  align-self: flex-start;
+  font-size: 3.5em;
+}
+
+#about .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

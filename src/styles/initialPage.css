@@ -1,0 +1,12 @@
+#main-content #intro {
+  justify-content: center;
+  gap: 10px;
+}
+
+#intro h1 {
+  font-size: 70px;
+}
+
+#intro p {
+  font-size: 18px;
+}
